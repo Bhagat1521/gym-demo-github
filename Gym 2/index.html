@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.jpeg">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="img/dumble.png" alt="">
+            <div>FitZone fitness</div>
+        </div>
+      
+      <nav>
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#Form">Enroll your seat</a>
+        
+      </nav>
+    </header>
+        <section id="Home" class="section">
+            <h1>FitZone Fitness</h1>
+            <h2>Stronger Every Day,<span> Inside and Out.</span></h2>
+            <p>Empower Your Body, Empower Your Mind.</p>
+           <a href="#Form"><button>Enroll Your Seat</button></a>
+        </section>
+      <section id="about" class="section">
+            <h2>About Gym</h2>
+            <p>Welcome to FitZone Fitness, where fitness meets passion and dedication. We're more than just a gym; we're a community committed to helping you achieve your health and fitness goals.</p>
+            <p>At FitZone Fitness, we believe that everyone deserves the opportunity to live a healthy and active lifestyle. Whether you're new to fitness or a seasoned athlete, our state-of-the-art facilities and experienced trainers are here to support you every step of the way.</p>
+            <p>Our mission is to empower you to become the best version of yourself. We offer a wide range of equipment, group fitness classes, personalized training programs, and nutritional guidance to ensure that you have everything you need to succeed on your fitness journey.</p>
+            <p>But FitZone Fitness is more than just a place to work out; it's a community of like-minded individuals who share a passion for health and wellness. Join us and surround yourself with positivity, motivation, and support.</p>
+            <p>No matter what your fitness goals may be, we're here to help you reach them. Start your journey with us today and discover the endless possibilities that await you at FitZone Fitness.</p>
+            
+              <div class="img">
+                <img src="img/muscle1.jpg" alt="">
+                <img src="img/muscle3.jpg" alt="">
+                <img src="img/muscle4.jpg" alt="">
+            </div>
+          
+
+          
+      </section>
+      <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="images">
+          <div>
+           <img src="img/dumble.png" alt="">
+           <p>Personal</p>
+          </div>
+          <div>
+            <img src="img/support.png" alt="">
+            <p>Open 24/7</p>
+          </div>
+          <div>
+            <img src="img/trademill.png" alt="">
+            <p>Trademill</p>
+          </div>
+          <div>
+            <img src="img/yoga.png" alt="">
+            <p>Yoga</p>
+          </div>
+          
+          
+        </div>
+        
+        
+      </section>
+      <section id="Form" class="section">
+        
+        <div class="login-container">
+          <h2>Enroll seat</h2>
+          <form action="">
+            <input type="text" id="name" placeholder="Yourname" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="number" id="height" placeholder="Height (cm)" required>
+            <input type="number" id="weight" placeholder="Weight (kg)" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="number" id="mob" placeholder="Phone no." required>
+
+            <input type="submit" value="Submit" onclick="erase()">
+          </form>
+        </div>
+        
+      </section>
+      <footer>
+        <p>&copy; 2024 fitZone Fitness. All rights reserved.</p>
+      </footer>
+      <script>
+      function erase(){
+
+        let usernameInput = document.getElementById("name");
+        let passInput = document.getElementById("password");
+        let heightInput = document.getElementById("height");
+        let weightInput = document.getElementById("weight");
+        let ageInput = document.getElementById("age");
+        let mobInput = document.getElementById("mob");
+
+        let username = usernameInput.value
+        let password = passInput.value
+        let height = heightInput.value
+        let weight = weightInput.value
+        let age = ageInput.value
+        let mobile = mobInput.value
+        
+        if (username === "" || password === "" || height === "" || weight === "" || age === "" || mobile === ""){
+          alert("please enter your information")
+        }
+        else{
+          alert("Form Submitted")
+        }
+        
+        //let txt = document.getElementsByClassName(".login-container")
+        //txt.value = ""
+      }
+      
+    </script>
+</body>
+</html>
